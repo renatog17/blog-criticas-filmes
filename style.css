@@ -6,6 +6,11 @@ body{
     background-color: var(--cor-de-fundo);
 }
 
+.conteiner{
+    display: grid;
+    grid-template-columns:  70% 30%;
+}
+
 .header{
     background-color: #271111;
     background-image: url(cartazes/banner-blog-cinema.jpg);
@@ -47,6 +52,7 @@ body{
     text-align: justify;
     line-height: 25px;
     padding: 1.5%;
+    text-indent: 20px;
 }
 
 .post__titulo{
@@ -60,6 +66,13 @@ body{
     margin-bottom: 1em;
     margin-top: 1em;
     height: 2em;
+}
+.post__tags{
+    display: flex;
+}
+
+.post__tag{
+    margin: 0 2px;
 }
 
 .paginacao{
@@ -81,6 +94,25 @@ body{
     margin: 10px;
     padding: 10px;
     border: 0px 0px 2px black;
+}
+
+.menu_direito{
+    background-color: #eaeaea;
+    margin: 10px;
+    box-shadow: -1px 0px 2px black;
+    padding-left: 55px;
+    padding-top: 100px;
+}
+.menu_direito__item{
+    width: 300px;
+    padding: 20px;
+    border-bottom: 1px solid #d3d3d3;
+    box-shadow: 0px 1px 0px black;
+}
+
+.menu_direito__icone{
+    margin-right: 20px;
+    width: 15px;
 }
 
 .footer{
