@@ -1,5 +1,5 @@
 :root{
-    --cor-de-fundo: #631c1c;
+    --cor-de-fundo: white;
 }
 
 body{
@@ -7,8 +7,12 @@ body{
 }
 
 .header{
-    background-color: rgb(255, 255, 255);
+    background-color: #271111;
+    background-image: url(cartazes/banner-blog-cinema.jpg);
     height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
     margin: 10px;
 }
 
@@ -24,10 +28,11 @@ body{
     display: flex;
     flex-direction: column;
     width: 600px;
-    background-color: #FDCB58;
-    border-radius: 10px;
+    /*background-color: #631c1c;*/
+    border: 1px solid #d3d3d3;
     padding: 1%;
     margin: 10px auto;
+    box-shadow: 1px 1px 0px #787878;
 }
 
 .post__img{
@@ -40,11 +45,13 @@ body{
     font-size: 20px;
     margin-top: 10px;
     text-align: justify;
+    line-height: 25px;
+    padding: 1.5%;
 }
 
 .post__titulo{
     display: inline-block;
-    background-color: #656565;
+    /*background-color: #FDCB58;*/
     font-family: 'Poppins';
     font-size: 20px;
     color: black;
@@ -53,12 +60,32 @@ body{
     margin-bottom: 1em;
     margin-top: 1em;
     height: 2em;
-    border-radius: 15px;
+}
+
+.paginacao{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.paginacao__lista{
+    display: flex;
+    flex-direction: row;
+}
+
+.paginacao__iten{
+    border: 1px solid #d3d3d3;
+    margin: 10px;
+    padding: 10px;
+    border: 0px 0px 2px black;
 }
 
 .footer{
-    height: 100px;
     display: flex;
+    align-content: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
