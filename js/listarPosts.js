@@ -1,11 +1,11 @@
 import { conectaApi } from "./conectaApi.js"
 
-async function buscarPostsEMontarPosts(){
+async function buscarPostsEMontarPosts(page){
     
-    const busca = await conectaApi.listaPosts()
-
+    const buscaNaoTradata = await conectaApi.listaPosts(page)
+    const busca = buscaNaoTradata.content
     const postsDom = document.getElementById('posts');
-
+    postsDom.innerHTML = ""
     busca.forEach(element => {
         const novoPost = document.createElement('div')
         const tituloPost = document.createElement('p')
@@ -42,4 +42,8 @@ async function buscarPostsEMontarPosts(){
     });
 }
 
-buscarPostsEMontarPosts()
+buscarPostsEMontarPosts(0)
+
+export const listarPosts = {
+    buscarPostsEMontarPosts
+}

@@ -21,6 +21,10 @@ body{
     margin: 10px;
 }
 
+.navegacao{
+    margin: 20px;
+}
+
 .posts{
     display: flex;
     justify-content: center;
@@ -89,11 +93,20 @@ body{
     flex-direction: row;
 }
 
-.paginacao__iten{
+.paginacao__item{
     border: 1px solid #d3d3d3;
     margin: 10px;
     padding: 10px;
     border: 0px 0px 2px black;
+}
+
+.paginacao__button{
+    height: 25px;
+    border: none;
+    background-color: white;
+}
+.paginacao__button:hover{
+    cursor: pointer;
 }
 
 .menu_direito{
